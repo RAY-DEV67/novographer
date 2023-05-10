@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+}
+
+.navbar {
+  box-shadow: 0px 0px 7px;
+  /* background-color: rgb(10, 10, 10); */
+  /* background-color: transparent; */
+}
+.landing {
+  background-image: url("./assets/pizzanova.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #996852;
+  animation: zoom-in-fade 5s ease-in-out;
+}
+.shopButton {
+  border: 2px solid #ffd700;
+}
+.hrh {
+  font-family: 'Titan One', cursive;
+  font-size: 10vw;
+}
+.hrp{
+  font-family: 'Titan One', cursive;
+}
+.BodyFont {
+  font-family: "Roboto Slab", serif;
+}
+@keyframes zoom-in-fade {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 1;
+  }
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 30px;
+  height: 30px;
+  margin-top: 1rem;
+  border: 5px solid #f3f3f3; /* Light grey */
+  border-top: 5px solid #383636; /* Black */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+.mobile-nav {
+  overflow-y: scroll;
+  background-color: white;
+}
+.showNav {
+  transition: transform 1s ease-in-out;
+  background-color: #fffafa;
+}
+.Cartloading-spinner {
+  width: 20px;
+  height: 20px;
+  /* margin-top: 1rem; */
+  border: 5px solid #f3f3f3; /* Light grey */
+  border-top: 5px solid #383636; /* Black */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+.overlay{
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+.pizzanova{
+  z-index: 2;
+}
+.landingPage{
+  overflow: hidden;
+}
