@@ -6,22 +6,22 @@ import { useNavigate, useParams } from "react-router-dom";
 import { TopCard } from "../components/topcard";
 
 export function Shop() {
-const [loading, setloading] = useState(false);
-const [empty, setempty] = useState(false);
-const [error, seterror] = useState("");
-const [hairs, sethairs] = useState([]);
-const [search, setsearch] = useState("");
-const navigate = useNavigate();
-const {product} = useParams()
+  const [loading, setloading] = useState(false);
+  const [empty, setempty] = useState(false);
+  const [error, seterror] = useState("");
+  const [hairs, sethairs] = useState([]);
+  const [search, setsearch] = useState("");
+  const navigate = useNavigate();
+  const { product } = useParams();
 
-console.log(error)
+  console.log(error);
 
   useEffect(() => {
     try {
       setloading(true);
       setempty(false);
       db.collection("Products")
-      .where("category", "==", product)
+        .where("category", "==", product)
         // .limit(10)
         .get()
         .then((collections) => {
@@ -42,12 +42,16 @@ console.log(error)
     }
   }, []);
 
-return ( <div>
-      <div className="pt-[4rem] bg-[#341b1d]"></div>
-        <p className="text-2xl mt-[1rem]">Shop</p>
-        <form className="relative"   onSubmit={() => {
+  return (
+    <div>
+      <div className="pt-[4rem]"></div>
+      <p className="text-2xl mt-[1rem] text-[#d9d9d9] hrp">Shop</p>
+      <form
+        className="relative"
+        onSubmit={() => {
           navigate(`/Search/${search}`);
-        }}>
+        }}
+      >
         <input
           type="text"
           placeholder="Search for products, categories..."
@@ -55,7 +59,7 @@ return ( <div>
           onChange={(e) => {
             setsearch(e.target.value);
           }}
-      />
+        />
         <svg
           width="35px"
           className="border border-[#b76e79] p-[0.3rem] rounded-[20px] absolute top-[16%] right-[5%] bg-[#b76e79]"
@@ -87,30 +91,45 @@ return ( <div>
         </svg>
       </form>
       <p className="w-[100%] flex flex-col items-center my-[1rem] loaderContainer">
-                    {loading && (
-                  <LoadingSpinner/>
-                    )}
-                  </p>
-                  <p className="w-[100%] text-center">
-                    {empty && "Please Check Your Network Connection"}
-                  </p>
+        {loading && <LoadingSpinner />}
+      </p>
+      <p className="w-[100%] text-center">
+        {empty && "Please Check Your Network Connection"}
+      </p>
 
-
-
-      {hairs.map((post, index) => {
+      <div className="mb-[5rem]">
+          <div
+            className="pb-[5rem] flex flex-wrap gap-3 justify-center"
+          >
+            {hairs.map((post, index) => {
             return (
               <div
               key={index}
-              onClick={() => {
-                // navigate(`/Buy/Products/${post.category}/${post.id}`)
-              }}
-              className="sm:w-[85vw] lg:w-[90%]"
+              className="max-w-4xl"
             >
                 <TopCard post={post} />
               </div>
             );
           })}
-          <p className="my-[2rem]">Footer</p>
-    </div> );
-}
+          </div>
+        </div>
 
+      {/* {hairs.map((post, index) => { */}
+        {/* return ( */}
+          {/* <div */}
+            {/* key={index} */}
+            {/* onClick={() => { */}
+              {/* navigate(`/Buy/Products/${post.category}/${post.id}`) */}
+            {/* }} */}
+            {/* className="pb-[2rem] bg-red-300 flex justify-center" */}
+          {/* > */}
+            {/* <div className="w-[1px]"> */}
+            {/* <TopCard post={post}/> */}
+            {/* </div> */}
+          {/* </div> */}
+        {/* ); */}
+      {/* })} */}
+      <p className="my-[2rem]">Footer</p>
+    </div>
+  );
+}

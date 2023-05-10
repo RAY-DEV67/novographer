@@ -42,27 +42,6 @@ export function AddProduct() {
     if (!title) {
       tempErrors.title = "Please add a title";
     }
-    if (!color) {
-      tempErrors.color = "Please add a color";
-    }
-    if (!length) {
-      tempErrors.length = "Please add Length";
-    }
-    if (!lace) {
-      tempErrors.lace = "Please add Lace";
-    }
-    if (!texture) {
-      tempErrors.texture = "Please add Hair Texture";
-    }
-    if (!weight) {
-      tempErrors.weight = "Please add Weight";
-    }
-    if (!quality) {
-      tempErrors.quality = "Please add Quality";
-    }
-    if (!description) {
-      tempErrors.description = "Please input a description for the product";
-    }
     if (!prices) {
       tempErrors.price = "Please input a price for the product";
     }
