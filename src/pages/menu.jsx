@@ -14,12 +14,16 @@ export function Menu() {
     const navigate = useNavigate();
 
   return (
-    <div className="bg-[#FF6400] pt-[4rem]">
-      <p className="text-2xl my-[2rem] hrh text-[#d9d9d9]">Menu</p>
+    <div className="bg-[#FF6400] relative">
+              <div className="landing2"></div>
+      <div className="overlay w-[100vw] fixed top-0 h-[100vh]"></div>
+      <div className="flex flex-col items-center">
+      <div className="absolute top-0 pizzanova pt-[4rem]">
+      <p className="text-3xl mb-[1rem] mt-[2rem] hrh text-[#d9d9d9]">Menu</p>
       <div className="flex flex-col items-center">
         <div  onClick={() => {
                 navigate("/Shop/Pizza");
-              }} className="flex items-center border-y rounded-[20px] p-[0.5rem] w-[80vw] my-[1rem]">
+              }} className="flex items-center border-y rounded-[20px] p-[0.5rem] w-[90vw] my-[1rem]">
           <img src={pizza} alt="Pizza" className="w-[20vw] h-[100px] rounded-[20px]" />
           <p className="ml-[2rem] text-2xl font-bold text-[#d9d9d9]">Pizza</p>
         </div>
@@ -27,7 +31,7 @@ export function Menu() {
       <div className="flex flex-col items-center">
         <div  onClick={() => {
                 navigate("/Shop/Toppings");
-              }}  className="flex items-center border-y rounded-[20px] p-[0.5rem] w-[80vw] my-[1rem]">
+              }}  className="flex items-center border-y rounded-[20px] p-[0.5rem] w-[90vw] my-[1rem]">
           <img src={toppings} alt="Pizza" className="w-[20vw] h-[100px] rounded-[20px]"  />
           <p className="ml-[2rem] text-2xl font-bold text-[#d9d9d9]">Toppings</p>
         </div>
@@ -35,7 +39,7 @@ export function Menu() {
       <div className="flex flex-col items-center">
         <div  onClick={() => {
                 navigate("/Shop/Burger");
-              }}  className="flex items-center border-y rounded-[20px] p-[0.5rem] w-[80vw] my-[1rem]">
+              }}  className="flex items-center border-y rounded-[20px] p-[0.5rem] w-[90vw] my-[1rem]">
           <img src={burger} alt="Pizza" className="w-[20vw] h-[100px] rounded-[20px]" />
           <p className="ml-[2rem] text-2xl font-bold text-[#d9d9d9]">Burger</p>
         </div>
@@ -43,7 +47,7 @@ export function Menu() {
       <div className="flex flex-col items-center">
         <div  onClick={() => {
                 navigate("/Shop/Platter");
-              }}  className="flex items-center border-y rounded-[20px] p-[0.5rem] w-[80vw] my-[1rem]">
+              }}  className="flex items-center border-y rounded-[20px] p-[0.5rem] w-[90vw] my-[1rem]">
           <img src={platter} alt="Pizza" className="w-[20vw] h-[100px] rounded-[20px]" />
           <p className="ml-[2rem] text-2xl font-bold text-[#d9d9d9]">Platters</p>
         </div>
@@ -51,7 +55,7 @@ export function Menu() {
       <div className="flex flex-col items-center">
         <div  onClick={() => {
                 navigate("/Shop/Wraps");
-              }}  className="flex items-center border-y rounded-[20px] p-[0.5rem] w-[80vw] my-[1rem]">
+              }}  className="flex items-center border-y rounded-[20px] p-[0.5rem] w-[90vw] my-[1rem]">
           <img src={wraps} alt="Pizza" className="w-[20vw] h-[100px] rounded-[20px]" />
           <p className="ml-[2rem] text-2xl font-bold text-[#d9d9d9]">Wraps</p>
         </div>
@@ -59,7 +63,7 @@ export function Menu() {
       <div className="flex flex-col items-center">
         <div  onClick={() => {
                 navigate("/Shop/CockTails");
-              }}  className="flex items-center border-y rounded-[20px] p-[0.5rem] w-[80vw] my-[1rem]">
+              }}  className="flex items-center border-y rounded-[20px] p-[0.5rem] w-[90vw] my-[1rem]">
           <img src={cocktails} alt="Pizza" className="w-[20vw] h-[100px] rounded-[20px]" />
           <p className="ml-[2rem] text-2xl font-bold text-[#d9d9d9]">CockTails</p>
         </div>
@@ -67,7 +71,7 @@ export function Menu() {
       <div className="flex flex-col items-center">
         <div  onClick={() => {
                 navigate("/Shop/Drinks");
-              }}  className="flex items-center border-y rounded-[20px] p-[0.5rem] w-[80vw] my-[1rem]">
+              }}  className="flex items-center border-y rounded-[20px] p-[0.5rem] w-[90vw] my-[1rem]">
           <img src={drinks} alt="Pizza" className="w-[20vw] h-[100px] rounded-[20px]" />
           <p className="ml-[2rem] text-2xl font-bold text-[#d9d9d9]">Drinks</p>
         </div>
@@ -75,7 +79,7 @@ export function Menu() {
       <div className="flex flex-col items-center">
         <div  onClick={() => {
                 navigate("/Shop/Extras");
-              }}  className="flex items-center border-y rounded-[20px] p-[0.5rem] w-[80vw] my-[1rem]">
+              }}  className="flex items-center border-y rounded-[20px] p-[0.5rem] w-[90vw] my-[1rem]">
           <img src={nova} alt="Pizza" className="w-[20vw] h-[100px] rounded-[20px]" />
           <p className="ml-[2rem] text-2xl font-bold text-[#d9d9d9]">Extras</p>
         </div>
@@ -83,12 +87,15 @@ export function Menu() {
       <div className="flex flex-col items-center">
         <div  onClick={() => {
                 navigate("/Shop/Pizza Novar Special");
-              }}  className="flex items-center border-y rounded-[20px] p-[0.5rem] w-[80vw] my-[1rem]">
+              }}  className="flex items-center border-y rounded-[20px] p-[0.5rem] w-[90vw] my-[1rem]">
           <img src={nova} alt="Pizza" className="w-[20vw] h-[100px]" />
           <p className="ml-[2rem] text-2xl font-bold text-[#d9d9d9]">Pizza Novar Special</p>
         </div>
       </div>
 
-    </div>
+      </div>
+
+      </div>
+          </div>
   );
 }

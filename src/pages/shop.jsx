@@ -45,91 +45,89 @@ export function Shop() {
   return (
     <div>
       <div className="pt-[4rem]"></div>
-      <p className="text-2xl mt-[1rem] text-[#d9d9d9] hrp">Shop</p>
-      <form
-        className="relative"
-        onSubmit={() => {
-          navigate(`/Search/${search}`);
-        }}
-      >
-        <input
-          type="text"
-          placeholder="Search for products, categories..."
-          className="border border-[#b76e79] w-[90%] px-[1rem] py-[0.3rem] rounded-[20px] my-[0.5rem] bg-white"
-          onChange={(e) => {
-            setsearch(e.target.value);
+      <div className="overlay w-[100vw] fixed top-0 h-[100vh]"></div>
+      <div className="relative pizzanova">
+        <p className="text-3xl my-[2rem] text-[#d9d9d9] hrp">Shop</p>
+        <form
+          className="relative"
+          onSubmit={() => {
+            navigate(`/Search/${search}`);
           }}
-        />
-        <svg
-          width="35px"
-          className="border border-[#b76e79] p-[0.3rem] rounded-[20px] absolute top-[16%] right-[5%] bg-[#b76e79]"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
         >
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-          <g
-            id="SVGRepo_tracerCarrier"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          ></g>
-          <g id="SVGRepo_iconCarrier">
-            {" "}
-            <path
-              d="M15 15L21 21"
-              stroke="#ffffff"
-              stroke-width="2"
+          <input
+            type="text"
+            placeholder="Search for products, categories..."
+            className="border border-[#b76e79] w-[90%] px-[1rem] py-[0.3rem] rounded-[20px] my-[0.5rem] bg-white"
+            onChange={(e) => {
+              setsearch(e.target.value);
+            }}
+          />
+          <svg
+            width="35px"
+            className="border border-[#b76e79] p-[0.3rem] rounded-[20px] absolute top-[16%] right-[5%] bg-[#b76e79]"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
               stroke-linecap="round"
               stroke-linejoin="round"
-            ></path>{" "}
-            <path
-              d="M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
-              stroke="#ffffff"
-              stroke-width="2"
-            ></path>{" "}
-          </g>
-        </svg>
-      </form>
-      <p className="w-[100%] flex flex-col items-center my-[1rem] loaderContainer">
-        {loading && <LoadingSpinner />}
-      </p>
-      <p className="w-[100%] text-center">
-        {empty && "Please Check Your Network Connection"}
-      </p>
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              {" "}
+              <path
+                d="M15 15L21 21"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>{" "}
+              <path
+                d="M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                stroke="#ffffff"
+                stroke-width="2"
+              ></path>{" "}
+            </g>
+          </svg>
+        </form>
+        <p className="w-[100%] flex flex-col items-center my-[1rem] loaderContainer">
+          {loading && <LoadingSpinner />}
+        </p>
+        <p className="w-[100%] text-center">
+          {empty && "Please Check Your Network Connection"}
+        </p>
 
-      <div className="mb-[5rem]">
-          <div
-            className="pb-[5rem] flex flex-wrap gap-3 justify-center"
-          >
+        <div className="mb-[5rem]">
+          <div className="pb-[5rem] flex flex-wrap gap-3 justify-center">
             {hairs.map((post, index) => {
-            return (
-              <div
-              key={index}
-              className="max-w-4xl"
-            >
-                <TopCard post={post} />
-              </div>
-            );
-          })}
+              return (
+                <div key={index} className="max-w-4xl">
+                  <TopCard post={post} />
+                </div>
+              );
+            })}
           </div>
         </div>
 
-      {/* {hairs.map((post, index) => { */}
+        {/* {hairs.map((post, index) => { */}
         {/* return ( */}
-          {/* <div */}
-            {/* key={index} */}
-            {/* onClick={() => { */}
-              {/* navigate(`/Buy/Products/${post.category}/${post.id}`) */}
-            {/* }} */}
-            {/* className="pb-[2rem] bg-red-300 flex justify-center" */}
-          {/* > */}
-            {/* <div className="w-[1px]"> */}
-            {/* <TopCard post={post}/> */}
-            {/* </div> */}
-          {/* </div> */}
+        {/* <div */}
+        {/* key={index} */}
+        {/* onClick={() => { */}
+        {/* navigate(`/Buy/Products/${post.category}/${post.id}`) */}
+        {/* }} */}
+        {/* className="pb-[2rem] bg-red-300 flex justify-center" */}
+        {/* > */}
+        {/* <div className="w-[1px]"> */}
+        {/* <TopCard post={post}/> */}
+        {/* </div> */}
+        {/* </div> */}
         {/* ); */}
-      {/* })} */}
-      <p className="my-[2rem]">Footer</p>
+        {/* })} */}
+        <p className="my-[2rem]">Footer</p>
+      </div>
     </div>
   );
 }

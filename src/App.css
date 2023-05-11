@@ -12,15 +12,21 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-color: #996852;
   animation: zoom-in-fade 5s ease-in-out;
+}
+.landing2 {
+  background-image: url("./assets/Pizzeria.png");
+  background-size: contain;
+  background-repeat: repeat-y;
+  height: 250vh;
+  background-position: 50% 50%;
 }
 .shopButton {
   border: 2px solid #ffd700;
 }
 .hrh {
   font-family: 'Titan One', cursive;
-  font-size: 10vw;
+  font-size: 7vw;
 }
 .hrp{
   font-family: 'Titan One', cursive;

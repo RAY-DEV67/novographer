@@ -51,7 +51,7 @@ export function Cart() {
         }
       });
   }, []);
-  
+
   const formatCur = function (value, locale, currency) {
     return new Intl.NumberFormat(locale, {
       style: "currency",
@@ -73,50 +73,53 @@ export function Cart() {
 
   return (
     <div className="pt-[80px] bg-[#FF6400] h-[100vh] text-[#d9d9d9]">
-      {user ? (
-        <div className="lg:absolute lg:left-[35%] lg:top-[12%] lg:w-[60%]">
-          <p className="p-[1rem] pageHeader text-2xl text-center hrp">Cart</p>
-          <div className="flex flex-wrap gap-3 justify-center">
-            <p className="w-[100%] flex flex-col items-center loaderContainer">
-              {loading ? <LoadingSpinner /> : ""}
-            </p>
-            <p className="w-[100%] text-center font-bold">
-              {empty && "YOUR CART IS EMPTY 😪"}
-            </p>
-            {saved?.map((post, index) => {
-              return (
-                <div
-                  key={index}
-                  className="sm:w-[85vw] lg:w-[95%] max-w-4xl"
-                >
-                  <EcommerceCard post={post} />
-                </div>
-              );
-            })}
-          </div>
-
-          {!empty && (
-            <div>
-              <div className="flex justify-between mx-[1rem] mt-[3rem] border-y py-[1rem]">
-                <p>SUBTOTAL</p>
-                <p>{sum}</p>
-              </div>
-              <div onClick={() => {
-                navigate(`/Checkout/${saved[0].userId}`)
-              }} className="flex flex-col items-center">
-                <button className="text-white rounded-[20px] bg-[#deab24] font-bold mt-[2rem] py-[0.5rem] px-[1rem]">
-                  Check Out
-                </button>
-              </div>
+      <div className="overlay w-[100vw] fixed top-0 h-[100vh]"></div>
+      <div className="relative pizzanova">
+        {user ? (
+          <div className="lg:absolute lg:left-[35%] lg:top-[12%] lg:w-[60%]">
+            <p className="p-[1rem] pageHeader text-2xl text-center hrp">Cart</p>
+            <div className="flex flex-wrap gap-3 justify-center">
+              <p className="w-[100%] flex flex-col items-center loaderContainer">
+                {loading ? <LoadingSpinner /> : ""}
+              </p>
+              <p className="w-[100%] text-center font-bold">
+                {empty && "YOUR CART IS EMPTY 😪"}
+              </p>
+              {saved?.map((post, index) => {
+                return (
+                  <div key={index} className="sm:w-[85vw] lg:w-[95%] max-w-4xl">
+                    <EcommerceCard post={post} />
+                  </div>
+                );
+              })}
             </div>
-          )}
-          <p className="text-white lg:hidden text-center bg-[#deab24] fixed text-[10px] w-[4%] left-[93%] top-[3%] z-20 rounded-full">
-            {saved.length}
-          </p>
-        </div>
-      ) : (
-        <Profile />
-      )}
+
+            {!empty && (
+              <div>
+                <div className="flex justify-between mx-[1rem] mt-[3rem] border-y py-[1rem]">
+                  <p>SUBTOTAL</p>
+                  <p>{sum}</p>
+                </div>
+                <div
+                  onClick={() => {
+                    navigate(`/Checkout/${saved[0].userId}`);
+                  }}
+                  className="flex flex-col items-center"
+                >
+                  <button className="text-white rounded-[20px] bg-[#FF6400] font-bold mt-[2rem] py-[0.5rem] px-[1rem]">
+                    Check Out
+                  </button>
+                </div>
+              </div>
+            )}
+            <p className="text-white lg:hidden text-center bg-[#FF6400] fixed text-[10px] w-[4%] left-[93%] top-[3%] z-20 rounded-full">
+              {saved.length}
+            </p>
+          </div>
+        ) : (
+          <Profile />
+        )}
+      </div>{" "}
     </div>
   );
 }
