@@ -1,13 +1,8 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/novalogo.png";
+import logo from "../assets/tlclogo.png";
 import { useEffect, useState} from "react";
-// import db from "../config/firebase";
 import { auth } from "../config/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
-// import LoadingSpinner from "./spinner";
-// import { EcommerceCard } from "./topcard";
-// import { signInWithPopup} from "firebase/auth";
-// import { ShowCart, SetShowCart, LoadCart } from "../App";
 import { useNavigate } from "react-router-dom";
 
 
@@ -35,30 +30,8 @@ useEffect(() => {
 }, []);
 
   return (
-    <div className={`fixed w-[100%] navbar z-10 ${scrolled ? "bg-[#FF6400]" : "bg-transparent"}`}>
+    <div className={`fixed w-[100%] navbar z-10 ${scrolled ? "bg-[#1b2b3a]" : "bg-transparent"}`}>
       <div className="flex justify-between mx-[1rem] py-[0.5rem] items-center">
-        <div className="flex">
-          <svg
-            width="40px"
-            fill="#ffffff"
-            viewBox="0 0 1024 1024"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <title>Artboard</title>
-              <path
-                d="M768 306.2V383H256v-76.8h512zM256 536.6h512v-76.8H256v76.8zm0 153.6h512v-76.8H256v76.8z"
-                fill-rule="evenodd"
-              ></path>
-            </g>
-          </svg>
-        </div>
         <Link to="/">
           <img src={logo} alt="Logo" className="w-[15vw] my-[-0.5rem]" />
         </Link>

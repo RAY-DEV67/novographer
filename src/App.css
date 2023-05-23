@@ -8,7 +8,7 @@
   /* background-color: transparent; */
 }
 .landing {
-  background-image: url("./assets/pizzanova.webp");
+  background-image: url("./assets/tlcmain.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -39,7 +39,7 @@
     transform: scale(1);
     opacity: 1;
   }
-  100% {
+  50% {
     transform: scale(1.4);
     opacity: 1;
   }
@@ -79,7 +79,7 @@
   animation: spinner 1.5s linear infinite;
 }
 .overlay{
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.2);
   z-index: 1;
 }
 .pizzanova{
