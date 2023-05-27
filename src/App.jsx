@@ -30,7 +30,7 @@ function App() {
   const [cart, setcart] = useState(false);
   const [saved, setsaved] = useState([]);
   return (
-    <div className="App bg-[#FF6400]">
+    <div className="App">
        <Saved.Provider value={saved}>
         <SetSaved.Provider value={setsaved}>
           <SetAddCart.Provider value={setcart}>

@@ -63,7 +63,7 @@ import {
     return (
       <div className="flex flex-col items-center">
         <div className="flex flex-col items-center">
-        <div className="border-y border-[#d9d9d9] lg:h-[190px] w-[90vw] lg:w-[100%] flex rounded-[10px]">
+        <div className="border-y border-[#1b2b3a] lg:h-[190px] w-[90vw] lg:w-[100%] flex rounded-[10px]">
           <div className="w-[40%]">
             <img
               src={post.images}
@@ -77,7 +77,7 @@ import {
           <div className="ml-[1rem]">
             <div>
               <div className="flex justify-between w-[40vw]">
-                <h1 className="text-[#d9d9d9] font-bold mt-[0.5rem] text-left">{formatCur(post.price , 'en-NG' , "NGN")}</h1>
+                <h1 className="text-[#1b2b3a] font-bold mt-[0.5rem] text-left">{formatCur(post.price , 'en-NG' , "NGN")}</h1>
                 {loading ? (
               <div className="spinner-container px-[0.5rem] pt-[0.5rem] flex justify-center items-center">
                 <div className="Cartloading-spinner"></div>

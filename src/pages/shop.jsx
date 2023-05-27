@@ -43,11 +43,11 @@ export function Shop() {
   }, []);
 
   return (
-    <div>
+    <div className="bg-[#ffffff]">
       <div className="pt-[4rem]"></div>
       <div className="overlay w-[100vw] fixed top-0 h-[100vh]"></div>
       <div className="relative pizzanova">
-        <p className="text-3xl my-[2rem] text-[#d9d9d9] hrp">Shop</p>
+        <p className="text-3xl my-[2rem] text-[#1b2b3a] hrp">Shop</p>
         <form
           className="relative"
           onSubmit={() => {
@@ -57,14 +57,14 @@ export function Shop() {
           <input
             type="text"
             placeholder="Search for products, categories..."
-            className="border border-[#b76e79] w-[90%] px-[1rem] py-[0.3rem] rounded-[20px] my-[0.5rem] bg-white"
+            className="border border-[#1b2b3a] w-[90%] px-[1rem] py-[0.3rem] rounded-[20px] my-[0.5rem] bg-white"
             onChange={(e) => {
               setsearch(e.target.value);
             }}
           />
           <svg
             width="35px"
-            className="border border-[#b76e79] p-[0.3rem] rounded-[20px] absolute top-[16%] right-[5%] bg-[#b76e79]"
+            className="border border-[#1b2b3a] p-[0.3rem] rounded-[20px] absolute top-[16%] right-[5%] bg-[#1b2b3a]"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

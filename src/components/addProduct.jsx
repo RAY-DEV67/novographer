@@ -147,7 +147,7 @@ export function AddProduct() {
   return (
     <div>
       {user ? (
-        <div className="bg-[#FF6400] pt-[4rem]">
+        <div className="bg-[#1b2b3a] pt-[4rem]">
           <p className="text-[1rem] my-[2rem] hrp text-[#d9d9d9] ">Add A New Product</p>
           <div className="flex flex-col items-center">
             <form
@@ -170,83 +170,183 @@ export function AddProduct() {
                   <p
                     onClick={() => {
                       setcategories(false);
-                      setcategory("Pizza");
+                      setcategory("NEW IN");
                     }}
                     className="w-[100%] text-center pb-[0.5rem]"
                   >
-                    Pizza
+                    NEW IN
                   </p>
                   <p
                     onClick={() => {
                       setcategories(false);
-                      setcategory("Toppings");
+                      setcategory("T-Shirts");
                     }}
                     className="border-b-[2px] border-t-[2px] w-[100%] text-center py-[0.5rem]"
                   >
-                    Toppings
+ T-Shirts
                   </p>
                   <p
                     onClick={() => {
                       setcategories(false);
-                      setcategory("Burger");
+                      setcategory("Vests");
                     }}
                     className="border-b-[2px] border-t-[2px] w-[100%] text-center py-[0.5rem]"
                   >
-                    Burger
+                    Vests
                   </p>
                   <p
                     onClick={() => {
                       setcategories(false);
-                      setcategory("Platter");
+                      setcategory("Graphic T-Shirts");
                     }}
                     className="border-b-[2px] border-t-[2px] w-[100%] text-center py-[0.5rem]"
                   >
-                    Platter
+                    Graphic T-Shirts
                   </p>
                   <p
                     onClick={() => {
                       setcategories(false);
-                      setcategory("Wraps");
+                      setcategory("Hoodies & SweatShirts");
                     }}
                     className="border-b-[2px] border-t-[2px] w-[100%] text-center py-[0.5rem]"
                   >
-                    Wraps
+                    Hoodies & SweatShirts
                   </p>
                   <p
                     onClick={() => {
                       setcategories(false);
-                      setcategory("CockTails");
+                      setcategory("Cargos");
                     }}
                     className="border-b-[2px] border-t-[2px] w-[100%] text-center py-[0.5rem]"
                   >
-                    CockTail
+                    Cargos
                   </p>
                   <p
                     onClick={() => {
                       setcategories(false);
-                      setcategory("Drinks");
+                      setcategory("Shorts");
                     }}
                     className="border-b-[2px] border-t-[2px] w-[100%] text-center py-[0.5rem]"
                   >
-                    Drinks
+                    Shorts
                   </p>
                   <p
                     onClick={() => {
                       setcategories(false);
-                      setcategory("Extras");
+                      setcategory("Shirts");
                     }}
                     className="border-b-[2px] border-t-[2px] w-[100%] text-center py-[0.5rem]"
                   >
-                    Extras
+                    Shirts
+                
                   </p>
                   <p
                     onClick={() => {
                       setcategories(false);
-                      setcategory("Pizza Novar Special");
+                      setcategory("Tracksuits");
                     }}
                     className="border-b-[2px] border-t-[2px] w-[100%] text-center py-[0.5rem]"
                   >
-                  Pizza Novar Special
+                  Tracksuits
+                  </p>
+                  <p
+                    onClick={() => {
+                      setcategories(false);
+                      setcategory("Denim");
+                    }}
+                    className="border-b-[2px] border-t-[2px] w-[100%] text-center py-[0.5rem]"
+                  >
+                  Denim
+                  </p>
+                  <p
+                    onClick={() => {
+                      setcategories(false);
+                      setcategory("Suits & Tailoring");
+                    }}
+                    className="border-b-[2px] border-t-[2px] w-[100%] text-center py-[0.5rem]"
+                  >
+                  Suits & Tailoring
+                  </p>
+                  <p
+                    onClick={() => {
+                      setcategories(false);
+                      setcategory("Sets & Co-ords");
+                    }}
+                    className="border-b-[2px] border-t-[2px] w-[100%] text-center py-[0.5rem]"
+                  >
+                  Sets & Co-ords
+                  </p>
+                  <p
+                    onClick={() => {
+                      setcategories(false);
+                      setcategory("Joggers");
+                    }}
+                    className="border-b-[2px] border-t-[2px] w-[100%] text-center py-[0.5rem]"
+                  >
+                  Joggers
+                  </p>
+                  <p
+                    onClick={() => {
+                      setcategories(false);
+                      setcategory("Trousers");
+                    }}
+                    className="border-b-[2px] border-t-[2px] w-[100%] text-center py-[0.5rem]"
+                  >
+                  Trousers
+                  </p>
+                  <p
+                    onClick={() => {
+                      setcategories(false);
+                      setcategory("Coats & Jackets");
+                    }}
+                    className="border-b-[2px] border-t-[2px] w-[100%] text-center py-[0.5rem]"
+                  >
+                  Coats & Jackets
+                  </p>
+                  <p
+                    onClick={() => {
+                      setcategories(false);
+                      setcategory("Knitwear");
+                    }}
+                    className="border-b-[2px] border-t-[2px] w-[100%] text-center py-[0.5rem]"
+                  >
+                  Knitwear
+                  </p>
+                  <p
+                    onClick={() => {
+                      setcategories(false);
+                      setcategory("Linen Clothing");
+                    }}
+                    className="border-b-[2px] border-t-[2px] w-[100%] text-center py-[0.5rem]"
+                  >
+                  Linen Clothing
+                  </p>
+                  <p
+                    onClick={() => {
+                      setcategories(false);
+                      setcategory("Activewear");
+                    }}
+                    className="border-b-[2px] border-t-[2px] w-[100%] text-center py-[0.5rem]"
+                  >
+                  Activewear
+                  </p>
+                  <p
+                    onClick={() => {
+                      setcategories(false);
+                      setcategory("Underwear & Socks");
+                    }}
+                    className="border-b-[2px] border-t-[2px] w-[100%] text-center py-[0.5rem]"
+                  >
+                  Underwear & Socks
+                  </p>
+                  <p
+                    onClick={() => {
+                      setcategories(false);
+                      setcategory("Shoes & Accessories");
+                    }}
+                    className="border-b-[2px] border-t-[2px] w-[100%] text-center py-[0.5rem]"
+                  >
+                  Shoes & Accessories
                   </p>
                 </div>
               ) : (

@@ -121,7 +121,7 @@ export function TopCard(props) {
   };
 
   return (
-    <div className="topcard lg:w-[25vw] w-[42vw] border-y text-[#d9d9d9] border-[#deab24] rounded-[10px]">
+    <div className="topcard lg:w-[25vw] w-[42vw] border-y text-[#d9d9d9] border-[#1b2b3a] rounded-[10px]">
       <div className="relative">
         <img
           src={post.images}
@@ -146,7 +146,7 @@ export function TopCard(props) {
 
       <div className="mx-[1rem] flex justify-center">
         <div
-          className="p-[0.1rem] px-[1rem] rounded-sm mt-[1rem] mb-[0.5rem] text-white bg-[#FF6400]"
+          className="p-[0.1rem] px-[1rem] rounded-sm mt-[1rem] mb-[0.5rem] text-white bg-[#1b2b3a]"
           onClick={() => {
             !user
               ? navigate("/Profile")

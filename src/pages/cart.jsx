@@ -72,7 +72,7 @@ export function Cart() {
   console.log(sum);
 
   return (
-    <div className="pt-[80px] bg-[#FF6400] h-[100vh] text-[#d9d9d9]">
+    <div className="pt-[80px] h-[100vh] text-[#1b2b3a]">
       <div className="overlay w-[100vw] fixed top-0 h-[100vh]"></div>
       <div className="relative pizzanova">
         {user ? (
@@ -106,13 +106,13 @@ export function Cart() {
                   }}
                   className="flex flex-col items-center"
                 >
-                  <button className="text-white rounded-[20px] bg-[#FF6400] font-bold mt-[2rem] py-[0.5rem] px-[1rem]">
+                  <button className="text-white rounded-[20px] bg-[#1b2b3a] font-bold mt-[2rem] py-[0.5rem] px-[1rem]">
                     Check Out
                   </button>
                 </div>
               </div>
             )}
-            <p className="text-white lg:hidden text-center bg-[#FF6400] fixed text-[10px] w-[4%] left-[93%] top-[3%] z-20 rounded-full">
+            <p className="text-white lg:hidden text-center bg-[#FF6400] fixed text-[10px] cart w-[4%] left-[93%] top-[3%] rounded-full">
               {saved.length}
             </p>
           </div>
