@@ -17,11 +17,10 @@ export function LandingPage() {
       <div className="landing h-[100vh]"></div>
 <div className="absolute top-[20%] flex flex-col items-center w-[100vw]">
 <p className=" w-[100%] hrh text-[#000000]">Capturing The Beauty Of Humans</p>
-<p className=" w-[100%] hrh text-[#000000]">The Eye Of God</p>
 </div>
-      <div className="absolute text-left font-bold top-[30%] h-[90vh] w-[100vw] left-[5%] flex flex-col items-start justify-center py-[1rem] lg:w-[100vw]">
+      <div className="absolute text-left font-bold top-[40%] h-[90vh] w-[100vw] left-[35%] flex flex-col items-start justify-center py-[1rem] lg:w-[100vw]">
         <Link to="/Menu">
-            <button className="mt-[2rem] border-l-[2px] border-b-[2px] px-[1rem] border-[#000000] text-[1rem] text-[#000000] py-[0.5rem]">
+            <button className="mt-[2rem] border-[2px] px-[1rem] border-[#000000] text-[1rem] bg-[#000000] text-[#ffffff] py-[0.5rem]">
              View Portfolio
             </button>
           </Link>

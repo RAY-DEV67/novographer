@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/tlclogo.png";
 import { useEffect, useState} from "react";
 import { auth } from "../config/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -33,7 +32,7 @@ useEffect(() => {
     <div className={`fixed w-[100%] navbar z-10 ${scrolled ? "bg-[#ffffff]" : "bg-transparent"}`}>
       <div className="flex justify-center mx-[1rem] py-[0.5rem] items-center">
         <Link to="/">
-          <img src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685391427/bpixels/logo_2_gy3b3y.png" alt="Logo" className="w-[15vw] my-[-0.5rem]" />
+          <img src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685391427/bpixels/logo_2_gy3b3y.png" alt="Logo" className="w-[15vw] my-[-0.5rem] lg:w-[50px]" />
         </Link>
               </div>
     </div>
