@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -8,25 +9,24 @@
   /* background-color: transparent; */
 }
 .landing {
-  background-image: url("./assets/tlcmain.jpg");
+  background-image: url("https://res.cloudinary.com/dvl38skbc/image/upload/v1685392810/bpixels/311305686_143223771764891_7817133609176817112_n_zt72g6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   animation: zoom-in-fade 5s ease-in-out;
 }
 .landing2 {
-  background-image: url("./assets/Pizzeria.png");
-  background-size: contain;
-  background-repeat: repeat-y;
-  height: 250vh;
+  background-image: url("https://res.cloudinary.com/dvl38skbc/image/upload/v1685394175/bpixels/339997412_755589319284504_1944637396670317695_n_jpw29r.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 .shopButton {
   border: 2px solid #ffd700;
 }
 .hrh {
-  font-family: 'Titan One', cursive;
-  font-size: 7vw;
+  font-family: "Roboto Slab", serif;
+  font-size: 5vw;
 }
 .hrp{
   font-family: 'Titan One', cursive;
@@ -81,13 +81,46 @@
   border-radius: 50%;
   animation: spinner 1.5s linear infinite;
 }
-.overlay{
-  background-color: rgba(0,0,0,0.2);
-  z-index: 1;
-}
 .pizzanova{
   z-index: 2;
 }
 .landingPage{
   overflow: hidden;
 }
+.dara-slidetrack{
+  display: flex;
+  width: calc(100px * 20);
+  animation: dara 30s linear infinite;
+}
+@keyframes dara {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100px * 10));
+  }
+}
+.dara-main {
+  background-color: black;
+  width: 100vw;
+  height: 10vw;
+  place-items: center;
+  overflow: hidden;
+}
+.dara-slide {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 7vw;
+  perspective: 100px;
+  flex-direction: column;
+  justify-content: center;
+  height: 10vw;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 800;
+  background-color: #000009;
+  color: #ffffff;
+  font-family: 'Bruno Ace SC', cursive;
+}
+

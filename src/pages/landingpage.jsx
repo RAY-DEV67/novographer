@@ -15,18 +15,14 @@ export function LandingPage() {
   return (
     <div className="relative h-[100vh] w-[100vw] landingPage">
       <div className="landing h-[100vh]"></div>
-      <div className="overlay w-[100vw] absolute top-0 h-[100vh]"></div>
-      <div className="absolute pizzanova text-left font-bold top-[20%] h-[90vh] w-[100vw] left-[5%] flex flex-col items-start justify-center py-[1rem] lg:w-[100vw]">
-        <p className="text-[#ffd700] text-2xl w-[100%]">Welcome to</p>
-        <p className=" w-[100%] hrh text-[#ffd700]">The Lost Culture</p>
+<div className="absolute top-[20%] flex flex-col items-center w-[100vw]">
+<p className=" w-[100%] hrh text-[#000000]">Capturing The Beauty Of Humans</p>
+<p className=" w-[100%] hrh text-[#000000]">The Eye Of God</p>
+</div>
+      <div className="absolute text-left font-bold top-[30%] h-[90vh] w-[100vw] left-[5%] flex flex-col items-start justify-center py-[1rem] lg:w-[100vw]">
         <Link to="/Menu">
-            <button className="mt-[2rem] rounded-[10px] text-[#ffd700] bg-[#1b2b3a] shopButton px-[1rem] py-[0.5rem]">
-              Shop Men
-            </button>
-          </Link>
-          <Link to="/Menu">
-            <button className="mt-[1rem] rounded-[10px] text-[#ffd700] bg-[#1b2b3a] shopButton px-[1rem] py-[0.5rem]">
-              Shop Women
+            <button className="mt-[2rem] border-l-[2px] border-b-[2px] px-[1rem] border-[#000000] text-[1rem] text-[#000000] py-[0.5rem]">
+             View Portfolio
             </button>
           </Link>
       </div>
