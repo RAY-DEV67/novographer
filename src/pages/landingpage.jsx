@@ -15,12 +15,13 @@ export function LandingPage() {
   return (
     <div className="relative h-[100vh] w-[100vw] landingPage">
       <div className="landing h-[100vh]"></div>
-<div className="absolute top-[20%] flex flex-col items-center w-[100vw]">
-<p className=" w-[100%] hrh text-[#000000]">Capturing The Beauty Of Humans</p>
+      
+<div className="absolute top-[10%] flex flex-col items-center w-[100vw]">
+<p className=" w-[80%] hrh text-[#000000]"><span className="text-[15vw]">C</span>apturing The Beauty Of Humans</p>
 </div>
-      <div className="absolute text-left font-bold top-[40%] h-[90vh] w-[100vw] left-[35%] flex flex-col items-start justify-center py-[1rem] lg:w-[100vw]">
+      <div className="absolute text-left font-bold top-[80%] left-[50%] flex flex-col items-start justify-center py-[1rem] lg:w-[100vw] portfolioButton">
         <Link to="/Menu">
-            <button className="mt-[2rem] border-[2px] px-[1rem] border-[#000000] text-[1rem] bg-[#000000] text-[#ffffff] py-[0.5rem]">
+            <button className="border-[2px] px-[1rem] border-[#000000] text-[1rem] bg-[#000000] text-[#ffffff] py-[0.5rem]">
              View Portfolio
             </button>
           </Link>

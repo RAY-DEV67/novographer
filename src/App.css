@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
 }
 
 .navbar {
@@ -16,17 +17,17 @@
   animation: zoom-in-fade 5s ease-in-out;
 }
 .landing2 {
-  background-image: url("https://res.cloudinary.com/dvl38skbc/image/upload/v1685394175/bpixels/339997412_755589319284504_1944637396670317695_n_jpw29r.jpg");
+  background-image: url("https://res.cloudinary.com/dvl38skbc/image/upload/v1685469290/bpixels/322181059_5730133613691167_8037204559058642872_n_dtdrt9.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.shopButton {
-  border: 2px solid #ffd700;
+.portfolioButton{
+transform: translateX(-50%)
 }
 .hrh {
-  font-family: "Roboto Slab", serif;
-  font-size: 5vw;
+  font-family: 'Cherry Bomb One', cursive;
+  font-size: 8vw;
 }
 .hrp{
   font-family: 'Titan One', cursive;
@@ -121,6 +122,44 @@
   font-weight: 800;
   background-color: #000009;
   color: #ffffff;
-  font-family: 'Bruno Ace SC', cursive;
+  font-family: 'Poppins', sans-serif;
 }
 
+.footer{
+  background-image: url("https://res.cloudinary.com/dvl38skbc/image/upload/v1685468005/bpixels/324230249_854060389041990_4253394769706917261_n_rlni8f.jpg");
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.daratype {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  /* margin: 0 auto;  */
+  letter-spacing: 0.1em; /* Adjust as needed */
+  animation: typing 1.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  z-index: 100000000;
+  position: relative;
+}
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.head {
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+  transform: scale(0);
+}
+
+.showhead {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1);
+  transition: all 1s;
+}
