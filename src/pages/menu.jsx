@@ -98,7 +98,7 @@ export function Menu() {
   }, [wandeindex, Wande.length]);
 
   return (
-    <div className="relative text-[#ffd700]">
+    <div className="relative text-[#ffd700] bg-[#E9f2ea]">
       <div className="landing2 h-[100vh]"></div>
       <div className="my-[1rem]">
         <div className="dara-main">
@@ -106,85 +106,85 @@ export function Menu() {
             {/* SLIDES///// */}
 
             <div className=" dara-slide softtools">
-              <h5 className="text-[4vw]">Portfolio</h5>
+              <h5 className="text-[4vw] lg:text-[2vw]">Portfolio</h5>
             </div>
 
             <div className=" dara-slide softtools">
-              <h5 className="text-[4vw]">Portfolio</h5>
+              <h5 className="text-[4vw] lg:text-[2vw]">Portfolio</h5>
             </div>
 
             <div className=" dara-slide softtools">
-              <h5 className="text-[4vw]">Portfolio</h5>
+              <h5 className="text-[4vw] lg:text-[2vw]">Portfolio</h5>
             </div>
 
             <div className=" dara-slide softtools">
-              <h5 className="text-[4vw]">Portfolio</h5>
+              <h5 className="text-[4vw] lg:text-[2vw]">Portfolio</h5>
             </div>
 
             <div className=" dara-slide softtools">
-              <h5 className="text-[4vw]">Portfolio</h5>
+              <h5 className="text-[4vw] lg:text-[2vw]">Portfolio</h5>
             </div>
 
             <div className="dara-slide softtools">
-              <h5 className="text-[4vw]">Portfolio</h5>
+              <h5 className="text-[4vw] lg:text-[2vw]">Portfolio</h5>
             </div>
 
             <div className="dara-slide softtools">
-              <h5 className="text-[4vw]">Portfolio</h5>
+              <h5 className="text-[4vw] lg:text-[2vw]">Portfolio</h5>
             </div>
 
             <div className=" dara-slide softtools">
-              <h5 className="text-[4vw]">Portfolio</h5>
+              <h5 className="text-[4vw] lg:text-[2vw]">Portfolio</h5>
             </div>
 
             <div className=" dara-slide softtools">
-              <h5 className="text-[4vw]">Portfolio</h5>
+              <h5 className="text-[4vw] lg:text-[2vw]">Portfolio</h5>
             </div>
 
             <div className=" dara-slide softtools">
-              <h5 className="text-[4vw]">Portfolio</h5>
+              <h5 className="text-[4vw] lg:text-[2vw]">Portfolio</h5>
             </div>
 
             {/* SAME SLIDES (DOUBLED)//////// */}
 
             <div className=" dara-slide softtools">
-              <h5 className="text-[4vw]">Portfolio</h5>
+              <h5 className="text-[4vw] lg:text-[2vw]">Portfolio</h5>
             </div>
 
             <div className=" dara-slide softtools">
-              <h5 className="text-[4vw]">Portfolio</h5>
+              <h5 className="text-[4vw] lg:text-[2vw]">Portfolio</h5>
             </div>
 
             <div className=" dara-slide softtools">
-              <h5 className="text-[4vw]">Portfolio</h5>
+              <h5 className="text-[4vw] lg:text-[2vw]">Portfolio</h5>
             </div>
 
             <div className=" dara-slide softtools">
-              <h5 className="text-[4vw]">Portfolio</h5>
+              <h5 className="text-[4vw] lg:text-[2vw]">Portfolio</h5>
             </div>
 
             <div className=" dara-slide softtools">
-              <h5 className="text-[4vw]">Portfolio</h5>
+              <h5 className="text-[4vw] lg:text-[2vw]">Portfolio</h5>
             </div>
 
             <div className=" dara-slide softtools">
-              <h5 className="text-[4vw]">Portfolio</h5>
+              <h5 className="text-[4vw] lg:text-[2vw]">Portfolio</h5>
             </div>
 
             <div className=" dara-slide softtools">
-              <h5 className="text-[4vw]">Portfolio</h5>
+              <h5 className="text-[4vw] lg:text-[2vw]">Portfolio</h5>
             </div>
 
             <div className="dara-slide softtools">
-              <h5 className="text-[4vw]">Portfolio</h5>
+              <h5 className="text-[4vw] lg:text-[2vw]">Portfolio</h5>
             </div>
 
             <div className="dara-slide softtools">
-              <h5 className="text-[4vw]">Portfolio</h5>
+              <h5 className="text-[4vw] lg:text-[2vw]">Portfolio</h5>
             </div>
 
             <div className="dara-slide softtools">
-              <h5 className="text-[4vw]">Portfolio</h5>
+              <h5 className="text-[4vw] lg:text-[2vw]">Portfolio</h5>
             </div>
           </div>
         </div>
@@ -196,7 +196,7 @@ export function Menu() {
             <img
               alt="img2"
               src={Ayra[index]}
-              className="object-contain topcard "
+              className="object-contain topcard lg:w-[50vw]"
             />
           </div>
           </AnimatedDiv>
@@ -252,7 +252,7 @@ export function Menu() {
             <img
               alt="img2"
               src={Kizz[kizzindex]}
-              className="object-contain topcard "
+              className="object-contain topcard lg:w-[50vw]"
             />
           </div>
           </AnimatedDiv>
@@ -294,7 +294,7 @@ export function Menu() {
             <img
               alt="img2"
               src={Buju[bujuindex]}
-              className="object-contain topcard "
+              className="object-contain topcard lg:w-[50vw]"
             />
           </div>
        </AnimatedDiv>
@@ -352,7 +352,7 @@ export function Menu() {
             <img
               alt="img2"
               src={Wande[wandeindex]}
-              className="object-contain topcard "
+              className="object-contain topcard lg:w-[50vw]"
             />
           </div>
        </AnimatedDiv>
@@ -409,7 +409,7 @@ export function Menu() {
             <img
               alt="img2"
               src={Tiwa[tiwaindex]}
-              className="object-contain topcard "
+              className="object-contain topcard lg:w-[50vw]"
             />
           </div>
 </AnimatedDiv>
