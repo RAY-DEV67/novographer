@@ -64,7 +64,7 @@ export function Menu() {
       return () => clearInterval(timer)
   }, [kizzindex, Kizz.length]);
 
-  const Tiwa = [ "https://res.cloudinary.com/dvl38skbc/image/upload/v1685466907/bpixels/323399902_1832154823802200_5962758087156170923_n_qqai2c.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685466906/bpixels/322947345_628427305706113_9036870351197804369_n_c20okl.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685466906/bpixels/323284519_155178863596291_4606751032350603451_n_phoq0e.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685466906/bpixels/322990354_872501470759116_2533355716340096412_n_kphlnl.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685466906/bpixels/322724230_485267323735917_278490026333826602_n_fqbjpp.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685466906/bpixels/322981281_1145845496294214_5873948970404488039_n_pb2xmu.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685466906/bpixels/322760747_1856960771312050_1790785387765992312_n_nz2uef.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685466905/bpixels/322924983_239637981732261_4196436951220172070_n_iltc30.jpg" ]
+  const Tiwa = [ "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734004/bpixels/275868544_691450531995268_2497826486572051990_n_jvofcc.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734005/bpixels/276003672_123602643581946_8802118422008466848_n_bsbcwt.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734004/bpixels/275916151_1134309724061624_906473185975115775_n_vm8sjp.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734005/bpixels/275980392_684263629392138_829900645164399234_n_hmd25c.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734004/bpixels/275907746_131239482804297_55378308740764359_n_wgfavs.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734004/bpixels/275853626_349112410313422_4436536087068310773_n_ft0oog.jpg" ]
   const [tiwaindex, settiwaindex] = useState(0);
 
   useEffect(() => {
@@ -96,6 +96,52 @@ export function Menu() {
 
       return () => clearInterval(timer)
   }, [wandeindex, Wande.length]);
+
+  const Davido = ["https://res.cloudinary.com/dvl38skbc/image/upload/v1685732638/bpixels/300507535_437721678130324_4406915255307677659_n_y2c0bk.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685732638/bpixels/299814483_7835147283225696_4370092039020030602_n_iwb3u3.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685732637/bpixels/299931431_5682598285092990_1282045020831327954_n_w3dgbo.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685732637/bpixels/300164027_184399997303813_8133657608491877780_n_ml6ocl.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685732637/bpixels/300388371_527942552497513_7420016714797600817_n_vc2ess.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685732637/bpixels/299831022_1083876055581175_7132683698007015447_n_vk1pln.jpg" ]
+  const [davidoindex, setdavidoindex] = useState(0);
+
+  useEffect(() => {
+      const timer = setInterval(() => {
+          setdavidoindex((davidoindex + 1) % Davido.length)
+      }, 1500)
+
+      return () => clearInterval(timer)
+  }, [davidoindex, Davido.length]);
+
+  
+  const AG = ["https://res.cloudinary.com/dvl38skbc/image/upload/v1685733416/bpixels/278931536_685704526014949_1911345965799427350_n_lxj6kz.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685733416/bpixels/278781870_3093813637503478_7859967685087288154_n_nz0yi0.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685733416/bpixels/278860878_682726133001935_5432548848261898077_n_kqivh5.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685733416/bpixels/278833854_721195105715244_656538482517354451_n_wqz0fw.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685733416/bpixels/278863302_561388428550426_6861540001604623604_n_nn2gdd.jpg" ]
+  const [agindex, setagindex] = useState(0);
+
+  useEffect(() => {
+      const timer = setInterval(() => {
+          setagindex((agindex + 1) % AG.length)
+      }, 1500)
+
+      return () => clearInterval(timer)
+  }, [agindex, AG.length]);
+
+  
+  const Wizkid = ["https://res.cloudinary.com/dvl38skbc/image/upload/v1685734373/bpixels/293945948_1895528330636386_2515850057578404975_n_vdwcld.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734373/bpixels/293804569_788772185624329_2263576064282095554_n_mjia0p.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734373/bpixels/293638065_1479079652531310_1668746118747038057_n_xegwow.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734373/bpixels/293604603_361888366127554_4765292184815734781_n_rzpomp.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734373/bpixels/293641043_435605724958519_7262207464844734887_n_yklykw.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734373/bpixels/293625947_1989758461219480_3097801478813631841_n_mibdss.jpg"  ]
+  const [wizkidindex, setwizkidindex] = useState(0);
+
+  useEffect(() => {
+      const timer = setInterval(() => {
+          setwizkidindex((wizkidindex + 1) % Wizkid.length)
+      }, 1500)
+
+      return () => clearInterval(timer)
+  }, [wizkidindex, Wizkid.length]);
+
+  const Vector = ["https://res.cloudinary.com/dvl38skbc/image/upload/v1685734976/bpixels/316471018_702176644584869_3695064501387525572_n_oyky4m.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734975/bpixels/316359828_663932658560840_2467159631069436155_n_xrej0u.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734974/bpixels/315995649_819705009264926_619910869986545879_n_ehklfz.jpg", "https://res.cloudinary.com/dvl38skbc/image/upload/v1685734974/bpixels/315919101_803355750765702_1812824762236834971_n_v6olta.jpg" ]
+  const [vectorindex, setvectorindex] = useState(0);
+
+  useEffect(() => {
+      const timer = setInterval(() => {
+          setvectorindex((vectorindex + 1) % Vector.length)
+      }, 1500)
+
+      return () => clearInterval(timer)
+  }, [vectorindex, Vector.length]);
 
   return (
     <div className="relative text-[#ffd700] bg-[#E9f2ea]">
@@ -246,6 +292,120 @@ export function Menu() {
           </div>
         </div>
 
+        
+        <AnimatedDiv>
+          <div className="flex justify-center relative mt-[1rem] mx-[1rem] lg:-z-10">
+            <img
+              alt="img2"
+              src={Davido[davidoindex]}
+              className="object-contain topcard lg:w-[50vw]"
+            />
+          </div>
+          </AnimatedDiv>
+
+          
+          <div className="flex flex-wrap gap-3 mt-[1rem] items-center justify-center">
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685733032/bpixels/299923855_903208494403674_3162584244454081934_n_gokgbv.jpg"
+              alt="Asake"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685733051/bpixels/300001014_1129203131338355_7128955304680157867_n_ck2uhy.jpg"
+              alt="Asake"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685733052/bpixels/300140587_174901281693647_243187456026375814_n_f5jxyq.jpg"
+              alt="Asake"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685733066/bpixels/300364915_442040551304111_5844114726639962599_n_iq6dnh.jpg"
+              alt="Asake"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685733066/bpixels/300255948_5890416210992641_6789399045030331321_n_xcbqgu.jpg"
+              alt="Asake"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685733084/bpixels/300455470_1202126267187673_4720444831912689280_n_slqv3l.jpg"
+              alt="Asake"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+        </div>
+
+        
+        <AnimatedDiv>
+          <div className="flex justify-center relative mt-[1rem] mx-[1rem] lg:-z-10">
+            <img
+              alt="img2"
+              src={Wizkid[wizkidindex]}
+              className="object-contain topcard lg:w-[50vw]"
+            />
+          </div>
+          </AnimatedDiv>
+
+          <div className="flex flex-wrap gap-3 mt-[1rem] items-center justify-center">
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685466401/bpixels/343300422_759316322258677_1577498328778256282_n_ijfvlp.jpg"
+              alt="Oxlade"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685466415/bpixels/343399209_6004577592973793_7652284917310101043_n_nunpej.jpg"
+              alt="Oxlade"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685466443/bpixels/343426294_1920628098271364_1337469300527147268_n_mlmqt3.jpg"
+              alt="Oxlade"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685466466/bpixels/343601425_976259906722758_9026207621062601130_n_hkpvfe.jpg"
+              alt="Oxlade"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685466467/bpixels/344158922_238846762134003_4502929101089046488_n_zceyrm.jpg"
+              alt="Oxlade"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685466468/bpixels/344162261_895654944845245_2027235695224013529_n_vbphws.jpg"
+              alt="Oxlade"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+        </div>
+
+
 
           <AnimatedDiv>
           <div className="flex justify-center relative mt-[1rem] mx-[1rem] lg:-z-10">
@@ -284,6 +444,107 @@ export function Menu() {
             <img
               src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685461127/bpixels/347443739_943632000020411_5388123890306173617_n_y5b5tf.jpg"
               alt="Mr Eazi"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+        </div>
+
+        
+        <AnimatedDiv>
+          <div className="flex justify-center relative mt-[1rem] mx-[1rem] lg:-z-10">
+            <img
+              alt="img2"
+              src={Vector[vectorindex]}
+              className="object-contain topcard lg:w-[50vw]"
+            />
+          </div>
+          </AnimatedDiv>
+
+          <div className="flex flex-wrap gap-3 mt-[1rem] items-center justify-center">
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685735332/bpixels/202068865_242436657234069_8180276636041495496_n_c0zacl.jpg"
+              alt="LAX"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685735333/bpixels/202625132_346792470407760_1202106470024097790_n_e6q8m1.jpg"
+              alt="LAX"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685735333/bpixels/203574265_326439559132064_2794394380176729123_n_vsi8ii.jpg"
+              alt="LAX"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685735332/bpixels/202170926_339552057694586_1772370969774687228_n_onrhe8.jpg"
+              alt="LAX"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685735332/bpixels/201944332_217062960262421_1200791422014587055_n_twb1ej.jpg"
+              alt="LAX"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685735333/bpixels/202607484_2846302149019524_5796316732061861208_n_huvxsn.jpg"
+              alt="LAX"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+        </div>
+
+
+        
+        <AnimatedDiv>
+          <div className="flex justify-center relative mt-[1rem] mx-[1rem] lg:-z-10">
+            <img
+              alt="img2"
+              src={AG[agindex]}
+              className="object-contain topcard lg:w-[50vw]"
+            />
+          </div>
+          </AnimatedDiv>
+
+          
+          
+          <div className="flex flex-wrap gap-3 mt-[1rem] items-center justify-center">
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685733742/bpixels/272032211_459243985876933_1501892010532603475_n_czrf3f.jpg"
+              alt="Banton"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685733742/bpixels/272009762_661347771667907_8536121236229966257_n_ijscpc.jpg"
+              alt="Banton"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685733742/bpixels/272200555_444671487005908_7354222465238871103_n_cztwzc.jpg"
+              alt="Banton"
+              className="funke lg:h-[80vh] w-[45vw]"
+            />
+          </div>
+          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
+            <img
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685733742/bpixels/272217141_144918727904870_8140277218703876832_n_ygyjyz.jpg"
+              alt="Banton"
               className="funke lg:h-[80vh] w-[45vw]"
             />
           </div>
@@ -361,43 +622,29 @@ export function Menu() {
           <div className="flex flex-wrap gap-3 mt-[1rem] items-center justify-center">
           <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
             <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685466401/bpixels/343300422_759316322258677_1577498328778256282_n_ijfvlp.jpg"
-              alt="Oxlade"
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685734728/bpixels/271940328_658586891932292_8141321156583690956_n_cmz0sd.jpg"
+              alt="Ugo"
               className="funke lg:h-[80vh] w-[45vw]"
             />
           </div>
           <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
             <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685466415/bpixels/343399209_6004577592973793_7652284917310101043_n_nunpej.jpg"
-              alt="Oxlade"
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685734728/bpixels/271996887_3015108708705837_6697444286818050077_n_v00ebq.jpg"
+              alt="Ugo"
               className="funke lg:h-[80vh] w-[45vw]"
             />
           </div>
           <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
             <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685466443/bpixels/343426294_1920628098271364_1337469300527147268_n_mlmqt3.jpg"
-              alt="Oxlade"
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685734728/bpixels/272004996_4650113761733209_7816539623113807528_n_co1af6.jpg"
+              alt="Ugo"
               className="funke lg:h-[80vh] w-[45vw]"
             />
           </div>
           <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
             <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685466466/bpixels/343601425_976259906722758_9026207621062601130_n_hkpvfe.jpg"
-              alt="Oxlade"
-              className="funke lg:h-[80vh] w-[45vw]"
-            />
-          </div>
-          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
-            <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685466467/bpixels/344158922_238846762134003_4502929101089046488_n_zceyrm.jpg"
-              alt="Oxlade"
-              className="funke lg:h-[80vh] w-[45vw]"
-            />
-          </div>
-          <div className="bg-[#d9d9d9] w-[45vw] lg:w-[30vw]">
-            <img
-              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685466468/bpixels/344162261_895654944845245_2027235695224013529_n_vbphws.jpg"
-              alt="Oxlade"
+              src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685734738/bpixels/272012604_645292166915058_7349075016151783510_n_giabrf.jpg"
+              alt="Udo"
               className="funke lg:h-[80vh] w-[45vw]"
             />
           </div>
