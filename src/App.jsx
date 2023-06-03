@@ -4,6 +4,7 @@ import { Navbar } from "./components/navbar";
 import { ScrollToTop } from "./components/scrolltotop";
 import { LandingPage } from "./pages/landingpage";
 import { LatestProjects } from "./pages/latestProjects";
+import { AddImage } from "./pages/addImage";
 import React from "react";
 import { Menu } from "./pages/menu";
 
@@ -17,7 +18,8 @@ function App() {
       <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route path="/Menu" element={<Menu />} />
-      <Route path="/LatestProjects" element={<LatestProjects />} />
+      <Route path="/Latest Projects" element={<LatestProjects />} />
+      <Route path="/Admin/Bpixels" element={<AddImage />} />
       </Routes>
       </ScrollToTop>
     </Router>
