@@ -67,7 +67,7 @@ export function LatestProjects() {
   console.log(clothsList.length)
  
   return (
-    <div className="bg-[#E9f2ea]">
+    <div>
       <div className="flex flex-col items-center lg:top-[13%] pt-[70px] lg:z-[-1]">
         <p className="font-bold text-2xl text-center border-y border-[#010101] py-[1rem]">Latest Projects</p>
         <div className="mb-[5rem] flex flex-wrap gap-3 w-[90vw] items-center justify-center mt-[1rem]">

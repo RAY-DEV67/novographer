@@ -9,15 +9,8 @@
   /* background-color: rgb(10, 10, 10); */
   /* background-color: transparent; */
 }
-.landing {
-  background-image: url("https://res.cloudinary.com/dvl38skbc/image/upload/v1685456491/bpixels/laindingmain_d7jqqx.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  animation: zoom-in-fade 5s ease-in-out;
-}
 .landing2 {
-  background-image: url("https://res.cloudinary.com/dvl38skbc/image/upload/v1685469290/bpixels/322181059_5730133613691167_8037204559058642872_n_dtdrt9.jpg");
+  background-image: url("https://res.cloudinary.com/dvl38skbc/image/upload/v1685896213/novographer/346252988_787889312907261_8086931916891794866_n_hzn616.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -125,7 +118,7 @@ transform: translateX(-50%)
 }
 
 .footer{
-  background-image: url("https://res.cloudinary.com/dvl38skbc/image/upload/v1685734975/bpixels/316467301_876300243554914_3147650799272426_n_gvymfy.jpg");
+  background-image: url("https://res.cloudinary.com/dvl38skbc/image/upload/v1685899386/novographer/346027546_5465424670226483_6600233162755853950_n_fmmjlx.jpg");
   height: 90vh;
   background-size: cover;
   background-repeat: no-repeat;

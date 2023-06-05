@@ -29,13 +29,13 @@ useEffect(() => {
 }, []);
 
   return (
-    <div className={`fixed w-[100%] navbar z-10 ${scrolled ? "bg-[#ffffff]" : "bg-transparent"}`}>
+    <div className={`fixed w-[100%] py-[0.5rem] navbar z-10 ${scrolled ? "bg-[#ffffff]" : "bg-transparent"}`}>
       <div className="flex justify-between mx-[1rem] py-[0.rem] items-center">
         <Link to="/">
-          <img src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685391427/bpixels/logo_2_gy3b3y.png" alt="Logo" className="w-[15vw] lg:w-[5vw] my-[-0.5rem]" />
+          <p className="font-bold">Novographer</p>
         </Link>
         <Link to="/Latest Projects">
-            <button className="border-[2px] px-[1rem] border-[#000000] text-[0.8rem] bg-[#000000] text-[#ffffff] py-[0.5rem]">
+            <button className="border-[2px] px-[1rem] rounded-[20px] border-[#000000] text-[0.8rem] bg-[#000000] text-[#ffffff] py-[0.5rem]">
              Latest Projects
             </button>
           </Link>
